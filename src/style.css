@@ -1,7 +1,14 @@
 @import url(/src/default.css);
 
+/* main and intro */
+
+.intro {
+    position: fixed;
+    width: 100%;
+}
+
 .section__intro {
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .intro__a {
@@ -10,10 +17,15 @@
 }
 
 .intro__book {
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .wrapper__between {
+    align-items: center;
+}
+
+
+.intro__wrapper{
     align-items: center;
 }
 
@@ -30,4 +42,84 @@
 .intro__nav a {
     text-decoration: none;
     color: inherit;
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    
 }
+
+.intro__nav a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+  
+  a:hover::after {
+    transform: scaleX(1);
+  }
+
+/* about section */
+
+.about {
+    padding: 100px 0;
+    background: linear-gradient(90deg, rgba(129,92,161,1) 0%, rgba(122,182,223,1) 100%);
+    animation: gradient 10s ease infinite;
+    background-size: 400% 400%;
+    text-align: center;
+}
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.about__book {
+    width: 90%;
+}
+
+.about__block {
+    width: 50%;
+}
+
+/* kategory section */
+
+.kategory {
+    background: linear-gradient(90deg, rgba(118,191,191,1) 0%, rgba(25,136,212,1) 100%);
+    animation: gradient-2 10s ease infinite;
+    background-size: 400% 400%;
+    padding: 40px 0;
+}
+
+@keyframes gradient-2 {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.kategory__header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
