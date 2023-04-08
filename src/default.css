@@ -161,3 +161,7 @@ a:hover::after {
 .footer__git {
     color: #bf73bc;
 }
+
+.footer__year {
+    color: #fff;
+}
