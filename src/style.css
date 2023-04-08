@@ -1,0 +1,33 @@
+@import url(/src/default.css);
+
+.section__intro {
+    padding: 20px 0;
+}
+
+.intro__a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.intro__book {
+    font-size: 60px;
+}
+
+.wrapper__between {
+    align-items: center;
+}
+
+.intro__nav li{
+    display: inline;
+    font-weight: 700;
+    color: #000;
+}
+
+.intro__nav a:not(:last-child){
+    margin-right: 100px;
+}
+
+.intro__nav a {
+    text-decoration: none;
+    color: inherit;
+}
