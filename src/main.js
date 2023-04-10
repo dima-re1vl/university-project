@@ -47,8 +47,8 @@ const toHTMLBook = book => `
         </div>
         `
 
-function renderBooks() {
-    const html = books.map(toHTMLBook).join('');
+function renderBooks(items = books) {
+    const html = items.map(toHTMLBook).join('');
     document.querySelector('#books').innerHTML = html;
 }
 
@@ -57,7 +57,7 @@ renderBooks();
 const btn_category = document.querySelectorAll('#category button');
 btn_category.forEach(function(button) {
   button.addEventListener('click', function() {
-    const html = books.filter(book => book.category == button.textContent);
-    console.log(html);
+    const items = books.filter(book => book.category == button.textContent);
+    renderBooks(items)
   });
 });
