@@ -1,0 +1,12 @@
+@import url(/src/default.css);
+
+.form-control {
+    margin: 0 auto;
+    width: 30% !important;
+    background: linear-gradient(90deg, rgb(169, 121, 231) 0%, rgb(42, 192, 187) 100%);
+    color: #fff !important;
+}
+
+.find__input {
+    margin-bottom: 20px;
+}

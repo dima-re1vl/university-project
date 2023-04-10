@@ -34,6 +34,7 @@ function renderCategory() {
 
 renderCategory();
 
+
 const toHTMLBook = book => `
         <div class="col-md-3 book">
             <div class="card">
@@ -52,7 +53,10 @@ function renderBooks(items = books) {
     document.querySelector('#books').innerHTML = html;
 }
 
-renderBooks();
+if(!document.querySelector('.find__input')) {
+  renderBooks();
+}
+
 
 const btn_category = document.querySelectorAll('#category button');
 btn_category.forEach(function(button) {
@@ -61,3 +65,19 @@ btn_category.forEach(function(button) {
     renderBooks(items)
   });
 });
+
+if(document.querySelector('.find__input')) {
+  const find_input = document.querySelector('.find__input');
+  find_input.addEventListener('input', e => {
+  const items = books.filter(book => book.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()));
+  if(e.target.value !== '') {
+    renderBooks(items)
+    }
+  else {
+    var container = document.getElementById('books');
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
+  }
+  }
+  })
+}
