@@ -69,15 +69,15 @@ btn_category.forEach(function(button) {
 if(document.querySelector('.find__input')) {
   const find_input = document.querySelector('.find__input');
   find_input.addEventListener('input', e => {
-  const items = books.filter(book => book.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()));
-  if(e.target.value !== '') {
-    renderBooks(items)
+    const items = books.filter(book => book.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()));
+    if(e.target.value !== '') {
+      renderBooks(items)
     }
-  else {
-    var container = document.getElementById('books');
-    while (container.firstChild) {
-      container.removeChild(container.firstChild);
-  }
-  }
+    else {
+      var container = document.getElementById('books');
+      while (container.firstChild) {
+        container.removeChild(container.firstChild);
+      }
+    }
   })
 }

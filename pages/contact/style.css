@@ -36,7 +36,7 @@
 }
 
 .wrapper__between {
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .wrapper__footer {
