@@ -13,6 +13,10 @@ body {
 	box-sizing: border-box;
 }
 
+.fa-magnifying-glass {
+    color: black;
+}
+
 div, p, input, button, form, span, a, ul, li {
 	box-sizing: border-box;
 	margin: 0;
@@ -199,11 +203,13 @@ a:hover::after {
 
 .main-btn {
     padding: 5px 20px;
-    border-radius: 15px;
+    border-radius: 50px;
 }
 
+
 .btn-html {
-    border-color: #ff960c;
+    border: 2px solid #ff960c;
+    box-shadow: 5px 0px 15px #ff960c;
     color: #ff960c;
     transition: all .1s ease-in;
 }
@@ -214,7 +220,8 @@ a:hover::after {
 }
 
 .btn-css {
-    border-color: #45a0eb;
+    border: 2px solid #45a0eb;
+    box-shadow: 5px 0px 15px #45a0eb;
     color: #45a0eb;
     transition: all .1s ease-in;
 }
@@ -225,7 +232,8 @@ a:hover::after {
 }
 
 .btn-js {
-    border-color: #ffe602;
+    border: 2px solid #ffe602;
+    box-shadow: 5px 0px 15px #ffe602;
     color: #ffe602;
     transition: all .1s ease-in;
 }
@@ -233,4 +241,24 @@ a:hover::after {
 .btn-js:hover {
     background-color: #ffe602;
     color: #fff;
+}
+
+.btn-all {
+    border: 2px solid #000000;
+    box-shadow: 5px 0px 15px #000000;
+    color: #000000;
+    transition: all .1s ease-in;
+}
+
+.btn-all:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: #ffffff !important;
+}
+
+input:focus {
+    box-shadow: none !important;
 }

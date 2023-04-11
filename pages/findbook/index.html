@@ -22,16 +22,16 @@
                     <div class="block-nav">
                         <nav class="intro__wrapper">
                             <ul class="intro__nav">
-                                <a href="/pages/allbooks/index.html"><li>Усі Книги</li></a>
+                                <a href="/index.html"><li>Головна</li></a>
                                 <a href="index.html"><li>Знайти Книгу</li></a>
                                 <a href="/pages/contact/index.html"><li>Контакти</li></a>
                             </ul>
                         </nav>
                     </div>
 
-                    <div class="block">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
+                    <a class="block" href="/pages/findbook/index.html">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
 
                 </div> <!-- wrapper -->
             </div> <!-- container -->
@@ -41,7 +41,11 @@
     <section class="section findbook">
         <div class="container">
 
-            <div class="wrapper__category" id="category"></div>
+            <div class="wrapper__category" id="category">
+                <div class="col-md-3 category">
+                    <button type="button" class="main-btn btn-html">Усі Книги</button>
+                </div>
+            </div>
 
             <div class="find__input">
                 <input type="text" class="form-control input__book" placeholder="Find book" aria-label="Username" aria-describedby="addon-wrapping">
