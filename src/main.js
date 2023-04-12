@@ -1,3 +1,21 @@
+let lastScroll = 0;
+const header = document.querySelector('.intro');
+const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
+const containHide = () => header.classList.contains('hide');
+window.addEventListener('scroll', () => {
+  
+  if(scrollPosition() > lastScroll && !containHide()) {
+    header.classList.add('hide')
+    console.log('down');
+  }
+  else if (scrollPosition() < lastScroll && containHide()) {
+    header.classList.remove('hide')
+    console.log('up');
+  }
+
+  lastScroll = scrollPosition();
+})
+
 let books = [
     {id: 1, name: 'HTML 5 для профессионалов', category: 'HTML', img: 'http://flibusta.site/ib/57/454957/c571757.jpg', link:'http://flibusta.site/b/571757/download'},
     {id: 2, name: 'HTML: Популярный самоучитель', category: 'HTML', img: 'http://flibusta.site/i/42/170142/cover.jpg', link:'http://flibusta.site/b/170142/fb2'},
