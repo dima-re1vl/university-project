@@ -33,7 +33,7 @@ const toHTMLBook = book => `
         <div class="col-md-3 book">
             <div class="card">
                 <h5 class="card-title book__category ${book.category == 'HTML' ? 'htmlbook' : book.category == 'CSS' ? 'cssbook' : 'jsbook'}">${book.category}</h5>
-                <img class="card-img-top" style="height: 300px;" src="${book.img}" alt="${book.name}">
+                <img class="card-img-top" style="height: 385px;" src="${book.img}" alt="${book.name}">
                 <div class="card-body">
                   <h5 class="card-title">${book.name}</h5>
                   <a href="${book.link}" class="btn btn-primary" data-btn="price" data-id="${book.id}">Завантажити</a>
