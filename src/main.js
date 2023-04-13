@@ -36,7 +36,7 @@ const toHTMLBook = book => `
                 <img class="card-img-top" style="height: 385px;" src="${book.img}" alt="${book.name}">
                 <div class="card-body">
                   <h5 class="card-title">${book.name}</h5>
-                  <a href="https://dima-re1vl.github.io/university-project/src/sprites/${book.id}.jpg" class="btn btn-primary" data-btn="price" data-id="${book.id}">Завантажити</a>
+                  <a href="https://dima-re1vl.github.io/university-project/pages/findbook/sprites/${book.id}.jpg" class="btn btn-primary" data-btn="price" data-id="${book.id}">Завантажити</a>
                 </div>
               </div>
         </div>
